@@ -119,3 +119,13 @@ body {
   margin: 0;
   color: var(--text-muted);
 }
+
+.demo-content {
+  border: 2px solid red;
+  background: #888888;
+}
+
+.demo-content svg {
+  display: block;
+  background: #ffffff;
+}
