@@ -121,6 +121,7 @@ body {
 }
 
 .demo-content {
+  display: inline-block;
   border: 2px solid red;
   background: #888888;
 }
