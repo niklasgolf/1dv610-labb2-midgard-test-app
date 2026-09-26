@@ -9,21 +9,21 @@ export class Navigation {
 
     { id: 'single-hex', label: 'Single Hex' },
 
-    { id: 'coordinates', label: 'Coordinates' },
-
-    { id: 'small-grid', label: 'Small Grid' },
-
     { id: 'x-dominated-grid', label: 'X-Dominated Grid' },
 
     { id: 'y-dominated-grid', label: 'Y-Dominated Grid' },
 
     { id: 'css-styling', label: 'CSS Styling' },
 
+    { id: 'svg-terrain', label: 'SVG Terrain' },
+
     { id: 'terrain-map', label: 'Terrain Map' },
 
     { id: 'neighbours', label: 'Neighbours' },
 
-    { id: 'invalid-coordinates', label: 'Invalid Coordinates' },
+    { id: 'unit-movement', label: 'Unit Movement' },
+
+    { id: 'interactive-map', label: 'Interactive Map' },
 
   ]
 

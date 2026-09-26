@@ -14,6 +14,8 @@ import { DemoAreaYDominatedGrid } from './demos/DemoAreaYDominatedGrid.ts'
 
 import { DemoAreaCssStyling } from './demos/DemoAreaCssStyling.ts'
 
+import { DemoAreaNeighbours } from './demos/DemoAreaNeighbours.ts'
+
 import introductionMarkdown from './project-notes/chapter-00-introduction.md?raw'
 
 import coordinateMarkdown from './project-notes/chapter-01-coordinate.md?raw'
@@ -105,13 +107,9 @@ export class DemoArea {
     this.demoContainer.className = 'demo-container'
 
     this.element.append(
-
       this.heading,
-
       this.description,
-
       this.demoContainer
-
     )
 
   }
@@ -150,9 +148,7 @@ export class DemoArea {
     }
 
     this.demoContainer.replaceChildren(
-
       demo.render()
-
     )
 
   }
@@ -163,7 +159,8 @@ export class DemoArea {
 
     this.description.textContent = ''
 
-    this.demoContainer.innerHTML = marked.parse(markdown) as string
+    this.demoContainer.innerHTML =
+      marked.parse(markdown) as string
 
   }
 
@@ -391,6 +388,12 @@ export class DemoArea {
 
     }
 
+    if (item.id === 'neighbours') {
+
+      return new DemoAreaNeighbours()
+
+    }
+
     return null
 
   }
@@ -424,6 +427,12 @@ export class DemoArea {
     if (item.id === 'css-styling') {
 
       return 'Styling individual SVG hexagons using ids generated from their Midgard coordinates.'
+
+    }
+
+    if (item.id === 'neighbours') {
+
+      return 'Using Midgard to find and interact with the six neighbouring hexagons.'
 
     }
 
