@@ -14,6 +14,8 @@ import { DemoAreaYDominatedGrid } from './demos/DemoAreaYDominatedGrid.ts'
 
 import { DemoAreaCssStyling } from './demos/DemoAreaCssStyling.ts'
 
+import { DemoAreaSvgTerrain } from './demos/DemoAreaSvgTerrain.ts'
+
 import { DemoAreaNeighbours } from './demos/DemoAreaNeighbours.ts'
 
 import introductionMarkdown from './project-notes/chapter-00-introduction.md?raw'
@@ -388,6 +390,12 @@ export class DemoArea {
 
     }
 
+    if (item.id === 'svg-terrain') {
+
+      return new DemoAreaSvgTerrain()
+
+    }
+
     if (item.id === 'neighbours') {
 
       return new DemoAreaNeighbours()
@@ -427,6 +435,12 @@ export class DemoArea {
     if (item.id === 'css-styling') {
 
       return 'Styling individual SVG hexagons using ids generated from their Midgard coordinates.'
+
+    }
+
+    if (item.id === 'svg-terrain') {
+
+      return 'Drawing detailed scalable terrain and objects inside Midgard hexagons using SVG.'
 
     }
 

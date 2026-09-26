@@ -17,13 +17,7 @@ export class Navigation {
 
     { id: 'svg-terrain', label: 'SVG Terrain' },
 
-    { id: 'terrain-map', label: 'Terrain Map' },
-
     { id: 'neighbours', label: 'Neighbours' },
-
-    { id: 'unit-movement', label: 'Unit Movement' },
-
-    { id: 'interactive-map', label: 'Interactive Map' },
 
   ]
 
