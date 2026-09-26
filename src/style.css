@@ -137,7 +137,9 @@ body {
   cursor: pointer;
 
   transition:
+
     background 0.15s ease,
+
     color 0.15s ease;
 
 }
@@ -279,5 +281,21 @@ body {
   display: block;
 
   background: #ffffff;
+
+}
+
+.css-styling-hexagon {
+
+  fill: #6f9f58;
+
+}
+
+#hex-4-2,
+
+#hex-3-3,
+
+#hex-5-3 {
+
+  fill: #4f9fcf;
 
 }

@@ -12,6 +12,8 @@ import { DemoAreaXDominatedGrid } from './demos/DemoAreaXDominatedGrid.ts'
 
 import { DemoAreaYDominatedGrid } from './demos/DemoAreaYDominatedGrid.ts'
 
+import { DemoAreaCssStyling } from './demos/DemoAreaCssStyling.ts'
+
 import introductionMarkdown from './project-notes/chapter-00-introduction.md?raw'
 
 import coordinateMarkdown from './project-notes/chapter-01-coordinate.md?raw'
@@ -148,7 +150,9 @@ export class DemoArea {
     }
 
     this.demoContainer.replaceChildren(
+
       demo.render()
+
     )
 
   }
@@ -381,6 +385,12 @@ export class DemoArea {
 
     }
 
+    if (item.id === 'css-styling') {
+
+      return new DemoAreaCssStyling()
+
+    }
+
     return null
 
   }
@@ -408,6 +418,12 @@ export class DemoArea {
     if (item.id === 'y-dominated-grid') {
 
       return 'A Midgard y-dominated hex grid generated from a 3 by 2 skeleton.'
+
+    }
+
+    if (item.id === 'css-styling') {
+
+      return 'Styling individual SVG hexagons using ids generated from their Midgard coordinates.'
 
     }
 
